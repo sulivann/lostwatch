@@ -1,0 +1,11 @@
+@import 'reset';
+@import 'globals';
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}

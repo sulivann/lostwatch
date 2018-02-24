@@ -1,0 +1,6 @@
+/// Extract a border value from a border map.
+///
+/// @parameter {string} $key - The key of the border you need.
+@function border($key) {
+  @return map-get($borders, $key);
+}

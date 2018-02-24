@@ -1,0 +1,6 @@
+/// Extract a font-size value from a font-size map.
+///
+/// @parameter {string} $key - The key of the font-size you need.
+@function fontsize($key) {
+  @return map-get($fontsizes, $key);
+}
