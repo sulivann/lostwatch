@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 dotenv.config({ silent: true });
 
 const config = {
-  baseURL: `${process.env.REACT_APP_API_URL}api/v2/`,
+  baseURL: `${process.env.REACT_APP_API_URL}api/v1/`,
   timeout: 2000,
 };
 

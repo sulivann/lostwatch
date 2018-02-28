@@ -1,0 +1,16 @@
+@import 'globals';
+
+.registerConfirmation {
+  padding: spacing('xxlarge');
+  text-align: center;
+
+  .blockHeaderModal {
+    max-width: 600px;
+    @include margin-center;
+    margin-top: spacing('xxxlarge');
+  }
+
+  .button {
+    margin-top: spacing('xxlarge');
+  }
+}

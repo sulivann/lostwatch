@@ -1,18 +1,15 @@
 import api from '../helpers/ApiHelper';
 
 class UserService {
-  static getUserWithTwitchAuthCode(authCode) {
+  static signUp(data) {
     return new Promise(resolve => {
-      resolve(api.post('auth', { code: authCode }));
+      resolve(api.post('auth/signup', data));
     });
   }
 
-  static getUserWithToken(token) {
+  static login(data) {
     return new Promise(resolve => {
-      resolve(api.get(
-        'profile',
-        {'headers': { Authorization: token }},
-      ));
+      resolve(api.post('auth/login', data));
     });
   }
 }

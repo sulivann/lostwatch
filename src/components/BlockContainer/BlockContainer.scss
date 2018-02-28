@@ -1,0 +1,11 @@
+@import 'globals';
+
+$block-container-width: 80%;
+$block-container-max-width: 76em;
+
+
+.blockContainer {
+  width: $block-container-max-width;
+  max-width: $block-container-max-width;
+  @include margin-center;
+}

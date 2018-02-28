@@ -1,0 +1,26 @@
+@import 'globals';
+
+$partners-width: 85%;
+$partners-max-width: 81em;
+
+.partners {
+  width: $partners-width;
+  max-width: $partners-max-width;
+  @include margin-center;
+  margin-bottom: spacing('xxxlarge');
+
+  &__row:first-child {
+    margin-top: spacing('xxxlarge');
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: spacing('xxlarge');
+  }
+
+  &__row:nth-child(2n) {
+    justify-content: space-around;
+  }
+}

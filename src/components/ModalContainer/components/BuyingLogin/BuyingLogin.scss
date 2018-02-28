@@ -1,0 +1,44 @@
+@import 'globals';
+
+.buyingLogin {
+  padding: spacing('xxlarge');
+  text-align: center;
+
+  .blockHeaderModal {
+    max-width: 650px;
+    @include margin-center;
+    margin-bottom: spacing('xxlarge');
+  }
+
+  &__inputs {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: spacing('xlarge');
+    text-align: left;
+  }
+
+  form {
+    position: relative;
+  }
+
+  &__error {
+    font-size: fontsize('small');
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    color: color('error');
+  }
+
+  .button {
+    margin-top: spacing('xxxlarge');
+  }
+
+  &__forgot {
+    margin-top: spacing('xlarge');
+  }
+}

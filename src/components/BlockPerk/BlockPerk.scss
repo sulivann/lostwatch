@@ -1,0 +1,52 @@
+@import 'globals';
+
+$block-perk-height: 350px;
+$block-perk-padding: 40px;
+
+.blockPerk {
+  background-color: color('white');
+  padding: $block-perk-padding;
+  height: $block-perk-height;
+  margin-bottom: spacing('xlarge');
+
+  &__titleIcon,
+  &__titleText {
+    vertical-align: middle;
+  }
+
+  &__titleText {
+    font-weight: fontweight('bold');
+    font-size: fontsize('xsmall');
+    opacity: 0.65;
+    text-transform: uppercase;
+    margin-left: spacing('large');
+  }
+
+  &__separator {
+    border-top: 1px solid color('gold');
+    display: block;
+    margin: spacing('xlarge') 0;
+  }
+
+  &__labelCube {
+    width: 10px;
+    height: 10px;
+    background-color: color('gold');
+    margin-right: spacing('large');
+  }
+
+  &__labelText {
+    transform: translateY(4px);
+  }
+
+  &__labelCube,
+  &__labelText {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__content {
+    line-height: 1.3;
+    margin-top: spacing('large');
+  }
+}

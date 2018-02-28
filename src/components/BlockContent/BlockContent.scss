@@ -1,0 +1,37 @@
+@import 'globals';
+
+$block-content-height: 395px;
+
+
+.blockContent {
+  background-color: color('white');
+  height: $block-content-height;
+  @include margin-center;
+  display: flex;
+
+  &__img {
+    height: 100%;
+  }
+
+  &__content {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__content > * {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: spacing('xlarge');
+  }
+
+  &__desc {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: spacing('xlarge');
+  }
+}

@@ -1,0 +1,26 @@
+@import 'globals';
+
+$guarantees-block-max-width: 370px;
+
+.guarantees {
+  @include margin-center;
+  margin-top: spacing('xxxlarge');
+  margin-bottom: spacing('xxxlarge');
+  text-align: center;
+
+  &__perks {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__perks > * {
+    flex-basis: 31.5%;
+    max-width: $guarantees-block-max-width;
+    text-align: left;
+  }
+
+  .button {
+    color: color('white');
+    margin-top: spacing('large');
+  }
+}

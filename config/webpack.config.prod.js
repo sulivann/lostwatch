@@ -216,6 +216,13 @@ module.exports = {
               },
             ],
           },
+          {
+            test: /\.(ttf|eot|woff|woff2)$/,
+            loader: "file-loader",
+            options: {
+              name: "fonts/[name].[ext]",
+            },
+          },
           // ** STOP ** Are you adding a new loader?
           // Make sure to add the new loader(s) before the "file" loader.
         ],

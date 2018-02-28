@@ -1,0 +1,30 @@
+@import 'globals';
+
+$block-title-lines-width: 90px;
+
+.blockTitle {
+  text-align: center;
+  margin-bottom: spacing('xlarge');
+
+  &__subtitle {
+    color: color('gold');
+    font-size: fontsize('small');
+    text-transform: uppercase;
+    font-weight: fontweight('bold');
+  }
+
+  &__title {
+    color: color('white');
+    margin-top: spacing('medium');
+
+    &:before,
+    &:after {
+      content: '';
+      display: inline-block;
+      width: $block-title-lines-width;
+      border-top: 1px solid color('gold');
+      margin: 0 spacing('large');
+      vertical-align: middle;
+    }
+  }
+}
