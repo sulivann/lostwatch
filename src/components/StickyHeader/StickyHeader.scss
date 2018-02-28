@@ -9,6 +9,7 @@ $sticky-header-background: rgba(0,0,0,0.37);
   background-color: $sticky-header-background;
   width: 100%;
   color: color('white');
+  z-index: 500;
 
   &__container {
     display: flex;

@@ -1,0 +1,20 @@
+@import 'globals';
+
+.blockTwoColumns {
+  display: flex;
+  margin-top: spacing('xxlarge');
+  color: color('white');
+
+  & > * {
+    flex: 1;
+  }
+
+  &__title {
+    margin-right: spacing('xlarge');
+  }
+
+  &__content {
+    margin-left: spacing('xlarge');
+    line-height: 1.3;
+  }
+}

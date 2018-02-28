@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import Lostwatch from '../Lostwatch';
 
@@ -13,18 +14,26 @@ const StickyHeader =  ({ openModal }) => {
     <div className="stickyHeader">
       <div className="stickyHeader__container">
         <div className="stickyHeader__logo">
-          <Lostwatch />
+          <Link to='/'>
+            <Lostwatch />
+          </Link>
         </div>
         <nav className="nav">
           <ul className="nav__mainPages">
-            <li>Accueil</li>
-            <li>À propos</li>
+            <Link to='/'>
+              <li>Accueil</li>
+            </Link>
+            <Link to='/about'>
+              <li>À propos</li>
+            </Link>
             <li>Contact</li>
           </ul>
           <span className="nav__separator"></span>
             {logged ?
               <ul className="nav__mainPages">
-                <li>Mon compte</li>
+                <Link to='/account'>
+                  <li>Mon compte</li>
+                </Link>
               </ul>
               :
               <ul className="nav__mainPages">
