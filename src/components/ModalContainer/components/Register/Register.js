@@ -16,6 +16,7 @@ class Register extends Component {
     this.state = {};
     this.state.error = '';
   }
+
   handleSubmit(event) {
     event.preventDefault();
     const data = new FormData(event.target);
@@ -26,8 +27,8 @@ class Register extends Component {
       }
       UserService.signUp(userData).then(response => {
         localStorage.setItem('email', userData.email);
-        this.props.closeModal();
       });
+      this.props.oenModal('register-confirmation');
     } else {
       this.setState({
         error: 'Les mots de passe ne correspondent pas',
@@ -86,7 +87,7 @@ class Register extends Component {
 }
 
 Register.propTypes = {
-  closeModal: PropTypes.func.isRequired,
+  openModal: PropTypes.func.isRequired,
 }
 
 export default Register;

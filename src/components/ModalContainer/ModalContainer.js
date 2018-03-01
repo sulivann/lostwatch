@@ -55,7 +55,7 @@ const ModalContainer = ({ modalContent, openModal, closeModal }) => {
       content = <BuyingLogin openModal={openModal}/>
       break;
     case 'register':
-      content = <Register closeModal={closeModal}/>
+      content = <Register openModal={openModal}/>
       break;
     case 'login':
       content = <Login closeModal={closeModal}/>

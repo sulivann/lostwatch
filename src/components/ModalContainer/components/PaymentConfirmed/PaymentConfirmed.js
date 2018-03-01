@@ -16,7 +16,7 @@ class PaymentConfirmed extends Component {
   }
 
   async componentWillMount() {
-    const certificate = await CertificateService.getCertificate('nguyen.sulivan@gmail.com');
+    const certificate = await CertificateService.getCertificate(localStorage.getItem('email'));
     this.setState({
       certificate: certificate.data.data,
     })
