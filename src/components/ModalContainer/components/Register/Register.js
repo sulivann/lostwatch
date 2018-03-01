@@ -28,7 +28,7 @@ class Register extends Component {
       UserService.signUp(userData).then(response => {
         localStorage.setItem('email', userData.email);
       });
-      this.props.oenModal('register-confirmation');
+      this.props.openModal('register-confirmation');
     } else {
       this.setState({
         error: 'Les mots de passe ne correspondent pas',
