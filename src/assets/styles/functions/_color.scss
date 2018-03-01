@@ -1,0 +1,6 @@
+/// Extract a color value from a color map.
+///
+/// @parameter {string} $key - The key of the color you need.
+@function color($key) {
+  @return map-get($colors, $key);
+}

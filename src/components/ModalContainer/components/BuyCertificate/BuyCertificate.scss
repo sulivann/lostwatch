@@ -1,0 +1,73 @@
+@import 'globals';
+
+$select-width: 265px;
+
+.buyCertificate {
+  padding: spacing('xxlarge');
+  text-align: center;
+
+  .blockHeaderModal {
+    max-width: 435px;
+    @include margin-center;
+  }
+
+  /**
+   * 1 - Add this to map
+   **/
+  &__inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px; /* 1 */
+    text-align: left;
+  }
+
+  /**
+   * 1 - Add this to map
+   **/
+  .button {
+    margin-top: 70px; /* 1 */
+  }
+}
+
+.select {
+  select {
+    background: transparent;
+    border: 1px solid color('white');
+    padding: 15px;
+    padding-right: 105px;
+    padding-left: 30px;
+    font-size: 0.867em;
+    display: block;
+    border-radius: 0;
+    -webkit-appearance: none;
+    text-transform: uppercase;
+    color: color('placeholder');
+    width: $select-width;
+  }
+
+  &__wrapper {
+    position: relative;
+
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: spacing('large');
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 4px solid color('white');
+    }
+  }
+
+  &__placeholder {
+    display: none;
+  }
+
+  &--isChanged select {
+    color: color('white');
+  }
+}

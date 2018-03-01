@@ -1,0 +1,21 @@
+@import 'globals';
+
+$button-border: 1px solid color('gold');
+
+.button {
+  border: $button-border;
+  display: inline-block;
+  padding: spacing('large') 0;
+  text-transform: uppercase;
+  font-size: fontsize('small');
+  font-weight: fontweight('bold');
+  cursor: pointer;
+  width: 280px;
+  text-align: center;
+  background: transparent;
+
+  &--isAlternate {
+    background-color: color('gold');
+    color: color('white');
+  }
+}

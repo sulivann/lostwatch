@@ -1,0 +1,13 @@
+@mixin as-h2 {
+  font-family: fontstack('title');
+  font-size: fontsize('xxlarge');
+  text-transform: uppercase;
+}
+
+@mixin as-h3 {
+  font-family: fontstack('title');
+  font-weight: fontweight('base');
+  font-size: fontsize('large');
+  text-transform: uppercase;
+}
+

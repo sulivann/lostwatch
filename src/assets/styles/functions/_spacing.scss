@@ -1,0 +1,6 @@
+/// Extract a spacing value from a spacing map.
+///
+/// @parameter {string} $key - The key of the spacing you need.
+@function spacing($key) {
+  @return map-get($spacings, $key);
+}

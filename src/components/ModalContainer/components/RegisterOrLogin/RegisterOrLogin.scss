@@ -1,0 +1,33 @@
+@import 'globals';
+
+.registerOrLogin {
+  padding: spacing('xxlarge');
+  text-align: center;
+  position: relative;
+  height: 100%;
+
+  .blockHeaderModal {
+    max-width: 600px;
+    @include margin-center;
+  }
+
+  &__ctas {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: spacing('xxxlarge');
+  }
+
+  &__separator {
+    height: auto;
+    border-left: 1px solid color('white');
+  }
+
+  &__forgot {
+    position: absolute;
+    bottom: spacing('xxlarge');
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

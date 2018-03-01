@@ -1,0 +1,18 @@
+@import 'globals';
+
+.checkingCertificate {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin-top: spacing('xtra-large');
+
+  .blockHeaderModal {
+    max-width: 645px;
+    @include margin-center;
+    margin-bottom: spacing('xxlarge');
+  }
+
+  &__label {
+    margin-top: spacing('xlarge');
+  }
+}

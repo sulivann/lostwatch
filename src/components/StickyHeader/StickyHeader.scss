@@ -1,0 +1,75 @@
+@import 'globals';
+
+$sticky-header-height: 110px;
+$sticky-header-background: rgba(0,0,0,0.37);
+
+.stickyHeader {
+  position: fixed;
+  height: $sticky-header-height;
+  background-color: $sticky-header-background;
+  width: 100%;
+  color: color('white');
+  z-index: 500;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+.nav {
+  ul,
+  li,
+  &__separator,
+  &__languages,
+  &__language,
+  &__arrowDown {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  li {
+    margin: 0 spacing('medium');
+    font-size: fontsize('small');
+    text-transform: uppercase;
+    font-weight: fontweight('bold');
+    cursor: pointer;
+  }
+
+  /**
+   * 1 - Adjustment because this font is glitchy
+   **/
+  &__separator {
+    transform: translateY(1px); /* 1 */
+  }
+
+  &__separator {
+    height: 15px;
+    width: 1px;
+    background-color: color('white');
+    margin: 0 spacing('medium');
+    vertical-align: middle;
+  }
+
+  &__languages {
+    height: 14px;
+    margin-left: spacing('xlarge');
+  }
+
+  &__language {
+    height: 100%;
+  }
+
+  &__arrowDown {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid color('white');
+    margin-left: spacing('medium');
+  }
+}

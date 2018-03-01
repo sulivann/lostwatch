@@ -1,0 +1,6 @@
+/// Extract a font-weight value from a font-weight map.
+///
+/// @parameter {string} $key - The key of the font-weight you need.
+@function fontweight($key) {
+  @return map-get($fontweights, $key);
+}

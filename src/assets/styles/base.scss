@@ -1,0 +1,37 @@
+@import 'reset';
+@import 'font-face';
+@import 'globals';
+
+html {
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+}
+
+body {
+  font-family: fontstack('base');
+  font-size: fontsize('base');
+  background-color: color('black');
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: color('white');
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  @include as-h2;
+}
+
+h3 {
+  @include as-h3;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}

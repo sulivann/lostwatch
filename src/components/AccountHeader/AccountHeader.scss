@@ -1,0 +1,26 @@
+@import 'globals';
+
+.accountHeader {
+  display: block;
+  height: auto;
+
+  .homeHeader__container {
+    padding: 220px 0;
+  }
+
+  svg {
+    margin: spacing('xlarge') 0;
+  }
+
+  &__settings {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: spacing('large');
+
+    & > * {
+      flex-basis: 48%;
+      margin-top: spacing('xxlarge');
+    }
+  }
+}

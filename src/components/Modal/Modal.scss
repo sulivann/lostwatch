@@ -1,0 +1,49 @@
+@import 'globals';
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &__contentWrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+    padding: 120px 60px;
+    pointer-events: none;
+  }
+
+  &__content {
+    position: relative;
+    margin: 0 auto;
+    background-color: color('blue');
+    border: 1px solid color('blue-lighter');
+    pointer-events: all;
+    width: 100%;
+    height: 100%;
+    max-width: 1050px;
+    max-height: 650px;
+  }
+
+  &__closeIcon {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+  }
+}

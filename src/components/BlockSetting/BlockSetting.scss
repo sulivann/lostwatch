@@ -1,0 +1,21 @@
+@import 'globals';
+
+$block-content-height: 395px;
+
+
+.blockSetting {
+  background-color: color('white');
+  color: color('black');
+  padding: spacing('xxxlarge');
+
+  a:link {
+    color: color('gold');
+    font-weight: fontweight('bold');
+    margin-top: spacing('medium');
+    display: block;
+  }
+
+  &__info {
+    margin: spacing('large') 0;
+  }
+}

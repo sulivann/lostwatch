@@ -1,0 +1,18 @@
+@import 'globals';
+
+.blockCentered {
+  color: color('white');
+  text-align: center;
+  margin: spacing('xtra-large') 0;
+
+  &__content {
+    line-height: 1.3;
+    width: 35%;
+    @include margin-center;
+  }
+
+  .blockTitle__title:before,
+  .blockTitle__title:after {
+    margin: 0 spacing('xxxlarge');
+  }
+}

@@ -1,0 +1,16 @@
+@import 'globals';
+
+.blockHeaderModal {
+  text-align: center;
+  color: color('white');
+
+  h2 {
+    font-size: fontsize('xlarge');
+    margin-top: spacing('xlarge');
+  }
+
+  &__description {
+    margin-top: spacing('large');
+    line-height: 1.3;
+  }
+}

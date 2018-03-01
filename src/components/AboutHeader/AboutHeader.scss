@@ -1,0 +1,23 @@
+@import 'globals';
+
+/**
+ * 1 - Img's size
+ **/
+.aboutHeader {
+  position: relative;
+  overflow: visible;
+  margin-bottom: 370px; /* 1 */
+
+  svg {
+    margin-top: spacing('xlarge');
+  }
+
+  &__illu {
+    width: auto;
+    max-height: 370px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    z-index: 5;
+  }
+}

@@ -1,0 +1,32 @@
+@import 'globals';
+
+$button-width: 265px;
+
+.buyingRegister {
+  padding: spacing('xxlarge');
+
+  .blockHeaderModal {
+    max-width: 435px;
+    @include margin-center;
+    margin-bottom: spacing('xxlarge');
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: spacing('xlarge');
+  }
+
+  .button {
+    height: 47px;
+    width: $button-width;
+  }
+
+  &__error {
+    font-size: fontsize('small');
+    margin-top: spacing('large');
+    display: block;
+    color: color('error');
+  }
+}

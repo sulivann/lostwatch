@@ -1,0 +1,44 @@
+@import 'globals';
+
+$input-width: 265px;
+
+.input {
+  color: color('white');
+  width: $input-width;
+
+  &__label {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: fontsize('xsmall');
+    text-transform: uppercase;
+    font-weight: fontweight('bold');
+    margin-bottom: spacing('large');
+
+    &:before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 10px;
+      height: 10px;
+      background-color: color('gold');
+      margin-right: spacing('medium');
+    }
+  }
+
+  &__field {
+    background: transparent;
+    border: 1px solid color('white');
+    padding: spacing('large');
+    padding-right: spacing('xlarge');
+    padding-left: spacing('xlarge');
+    font-size: fontsize('small');
+    display: block;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  &__field::placeholder {
+    font-weight: fontweight('bold');
+    color: color('placeholder');
+  }
+}

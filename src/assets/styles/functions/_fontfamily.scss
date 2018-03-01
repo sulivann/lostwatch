@@ -1,0 +1,6 @@
+/// Extract a font-family value from a font-family map.
+///
+/// @parameter {string} $key - The key of the font-family you need.
+@function fontfamily($key) {
+  @return map-get($fontfamilies, $key);
+}
